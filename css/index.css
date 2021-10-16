@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    /* background-position: ; */
+    /* height: 10vh; */
+    /* background-repeat: no-repeat; */
+}
+
+#section1 header {
+    /* display: flex;  */
+    position: fixed;
+
+}
+
+#section1 header ul {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+#section1 header ul li a{
+    padding: 70px;
+    text-decoration: none;
+    color: white;
+    /* border: ; */
+    font-size: 19.5px;
+    transition: all .4s;
+}
+
+#section1 header ul li:hover {
+    font-size: 23px;
+    text-decoration: underline;
+    border-bottom: 6px white;
+    color: black;
+}
+
+#section1 header ul h2 {
+    font-size: 50px;
+    color: white;
+
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.parallax {
+    background: #fff fixed no-repeat 50% 50%;
+    /* background-attachment: fixed; */
+
+    background-size: cover;
+}
+
+#section1 {
+    background-image: url("../imagenes/Enmascarar\ grupo\ 2.png");
+    z-index: 2;
+}
+
+#section1 div h1 {
+    z-index: 9999;
+    text-align: center;
+    -webkit-text-stroke: 2px #ffffff;
+    -webkit-text-fill-color: rgba(141, 17, 17, 0);
+    transform: translateY(40%);
+    position: fixed;
+    font-size: 150px;
+    width: 100%;
+    height: 100%;
+}
+
+#section1 div .subTitle {
+    z-index: 9999;
+    text-align: center;
+    transform: translateY(65%);
+    position: fixed;
+    font-size: 18px;
+    transform: translateX(120%);
+    margin-top: 420px;
+    width: 30%;
+    filter: blur(3px);
+    height: 10%;
+}
+
+#section1 div .subTitle span {
+    color: white;
+    padding-top: 1000px;
+    text-align: center;
+    filter: none;
+    margin: 10px;
+}
+
+
+
+#section2 {
+    background-image: url("../imagenes/Enmascarar\ grupo\ 1.png");
+    z-index: 2;
+    height: 100vh;
+}
+
+#section3 {
+    /* z-index: 9999; */
+    background-color: black;
+    z-index: 99999999;
+    position: absolute;
+}
+
+#section3 img {
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+}
+
