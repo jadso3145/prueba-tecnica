@@ -6,6 +6,7 @@
 
 body {
     overflow-x: hidden;
+    /* width: 100vw; */
     background: white;
 }
 
@@ -130,7 +131,7 @@ body {
 
 #section3 {
     position: absolute;
-    background: black;
+    background: #161415;
 
     overflow-x: scroll;
 }
@@ -200,6 +201,26 @@ body {
     align-items: center;
     justify-content: center;
     margin-right: 53px;
+}
+
+#section3 .image3 span {
+    font-size: 25px;
+    text-align: left;
+    width: 10%;
+    color: #ee8530;
+    justify-self: left;
+}
+
+#section3 .image3 p {
+    color: #ee8530;
+    width: 30%;
+    border-bottom: 1px solid #ee8530;
+}
+
+#section3 .image3 hr {
+    background-color: #ee8530;
+    height: 2px;
+    width: 50%;
 }
 
 #section3 .image3 img {
@@ -328,6 +349,7 @@ body {
 #section4 .container .tegnologias .techInfo p {
     width: 40%;
     letter-spacing: 1px;
+    color: #161415;;
     text-align: left;
     font-size: 14px;
 }
@@ -358,4 +380,23 @@ body {
     position: absolute;
     left: 17%;
     bottom: 84%;
+}
+
+
+footer {
+    background-color: #88b1c6;
+    width: 100vw;
+    position: absolute;
+    top: 400%;
+}
+
+
+.footerC {
+    height: 150px;
+    /* padding: 50px; */
+}
+
+.footerC span {
+    font-size: 25px;
+    font-weight: bold;
 }

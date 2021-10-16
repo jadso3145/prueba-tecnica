@@ -8,40 +8,25 @@ document.addEventListener("click", e => {
 
         let distance = imagen.getBoundingClientRect().x - 50
         if (e.target.matches(".left")) {
-            if (sliderNum > 0) {
-                    sliderNum--;
-                    imagen.style.transform = `translateX(${490 + distance}px)`
-                    console.log(sliderNum)
-
-                    // if (sliderNum < 0) {
-                    //     sliderNum = 0;
-                    // }
-
-                }
-            }
-            
-        if (e.target.matches(".rigth")) {
-            if (sliderNum < 5) {                
-                sliderNum++;
+            if (sliderNum > -1) { 
+                sliderNum--;
+                imagen.style.transform = `translateX(${360 + distance}px)`
                 console.log(sliderNum)
-                imagen.style.transform = `translateX(${-370 + distance}px)`
-                // if (sliderNum < 6) {
-                //     sliderNum = 0;
-                    
-                // }
-            } 
+            } else {
+                imagen.style.transform = `translateX(${0}px)`
+            }
         }
 
-        console.log(imagen)
-        console.log(distance)
+        if (e.target.matches(".rigth")) {
+            if (sliderNum < 5) {
+                sliderNum++;
+                console.log(sliderNum)
+                imagen.style.transform = `translateX(${-290 + distance}px)`
+            } 
+            
+        }
     }
 })
 
 
-// document.addEventListener("DOMContentLoaded", ()=> {
-//     const elemetCorusel = document.querySelectorAll(".carousel")
-
-//     M.Carousel.init(elemetCorusel, {
-//         duration: 150,
-//     })
-// })
+console.log(sliderNum)
