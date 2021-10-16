@@ -279,36 +279,77 @@ body {
 #section3 .elipse3 .circulo {
     position: relative;
     left: -2%;
-    z-index: 10;
+    z-index: 5;
 }
 
 #section3 .elipse3 .ovalo {
-    z-index: 5;
+    z-index: 100000000;
 }
 
 #section4 {
     position: relative;
-    /* margin-top: 580px; */
     background-image: url("./imagenes/Trazado\ 2.svg");
     background-size: cover;
-
     transform: translateY(-13.4%);
-
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
 }
 
 #section4 .container {
     grid-template-columns: repeat(2, 1fr);
     display: grid;
-    /* display: flex; */
     align-items: center;
     justify-content: space-around;
     position: relative;
-    /* margin-top: 1000px; */
     top: 50%;
 }
 
+#section4 .container .tegnologias {
+    position: relative;
+    top: -44%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section4 .container .tegnologias .logoTech {
+    height: 50px;
+    padding-right: 20px;
+}
+
+#section4 .container .tegnologias .techInfo {
+    display: flex;
+    padding-bottom: 37px;
+    justify-content: center;
+    margin-left: -200px;
+    align-items: center;
+}
+
+#section4 .container .tegnologias .techInfo p {
+    width: 50%;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+#section4 .container .imagen1 {
+
+    position: relative;
+    top: -50%;
+    left: 47%;
+}
+
 #section4 .container .imagen1 img {
-    width: 100px;
+    width: 260px;
+    height: 340px;
+}
+
+#section4 .container .imagen1 .footerTitleC h1{
+    font-size: 140px;
+    -webkit-text-stroke: 2px #000;
+    letter-spacing: 17px;
+    -webkit-text-fill-color: rgba(141, 17, 17, 0);
+    position: absolute;
+    left: 17%;
+    bottom: 80%;
+
 }
