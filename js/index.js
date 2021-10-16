@@ -2,11 +2,18 @@ const botton = document.querySelector("button")
 
 document.addEventListener("click", e => {
     if (e.target.matches("button")) {
-        const imagen = document.querySelector(".image3")
+        const imagen = document.querySelector(".scroll1")
 
-        imagen.style.transform = "translateX(400px)"
+        if (e.target.matches(".left")) {
+            let distance = imagen.getBoundingClientRect().x - 50
+            imagen.style.transform = `translateX(${300 + distance}px)`
+            
+        }
+
+
 
         console.log(imagen)
+        console.log(distance)
     }
 })
 

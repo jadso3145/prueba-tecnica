@@ -133,8 +133,8 @@ body {
 
 #section3 .scroll1 {
     margin-top: 180px;
-    /* transform: translateX(400px); */
-    transition: all .3s;
+    transform: translateX(0px);
+    transition: all .3s ease;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
