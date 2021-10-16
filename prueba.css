@@ -48,12 +48,14 @@ body {
     padding: 50px;
     z-index: 999999;
 }
+
 #section1 header ul li {
     transform: scale(.8);
     transition: all 0.3s;
     padding-left: 50px;
     padding-right: 50px;
 }
+
 #section1 header ul li:hover {
     transform: scale(1.1);
     color: black;
@@ -68,6 +70,7 @@ body {
     transition: all 0.3s;
     color: white;
 }
+
 #section1 header ul li a:hover {
     border-bottom: 1px solid white;
     transform: scale(1.5);
@@ -128,11 +131,11 @@ body {
 #section3 {
     position: absolute;
     background: black;
-    
+
     overflow-x: scroll;
 }
 
-#section3 .probar{
+#section3 .probar {
     position: relative;
     top: -30%;
 }
@@ -172,7 +175,7 @@ body {
 
 #section3::-webkit-scrollbar {
     display: none;
-} 
+}
 
 #section3 .title3 {
     display: flex;
@@ -205,8 +208,42 @@ body {
     transition: all .3s;
 }
 
+
 #section3 .image3 img:hover {
     transform: scale(1.4);
+}
+
+
+#section3 .arrowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-top: 33px;
+}
+
+#section3 .arrowContainer .divLeft {
+    margin-right: 30px;
+}
+
+#section3 .arrowContainer .divLeft .left {
+    transform: rotate(-180deg) scale(1);
+    transition: all .3s ease;
+    width: 20px;
+}
+
+#section3 .arrowContainer .divLeft .left:hover {
+    transform: rotate(-180deg) scale(1.2);
+}
+
+#section3 .arrowContainer .divRigth .rigth {
+    transform: rotate(-180deg) scale(1);
+    transition: all .3s ease;
+    width: 20px;
+}
+
+#section3 .arrowContainer .divRigth .rigth:hover {
+    transform: rotate(-180deg) scale(1.2);
 }
 
 #section4 {
@@ -214,14 +251,14 @@ body {
     /* margin-top: 580px; */
     background-image: url(./imagenes/Trazado\ 2.svg);
     background-size: cover;
-    
+
     transform: translateY(80%);
-    
+
     width: 100vw;
     height: 100vh;
 }
 
-#section4 .container{
+#section4 .container {
     grid-template-columns: repeat(2, 1fr);
     display: grid;
     /* display: flex; */

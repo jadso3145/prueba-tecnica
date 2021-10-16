@@ -12,14 +12,23 @@ document.addEventListener("click", e => {
                     sliderNum--;
                     imagen.style.transform = `translateX(${490 + distance}px)`
                     console.log(sliderNum)
-                }
-        }
 
+                    // if (sliderNum < 0) {
+                    //     sliderNum = 0;
+                    // }
+
+                }
+            }
+            
         if (e.target.matches(".rigth")) {
             if (sliderNum < 5) {                
                 sliderNum++;
                 console.log(sliderNum)
-                imagen.style.transform = `translateX(${-350 + distance}px)`
+                imagen.style.transform = `translateX(${-370 + distance}px)`
+                // if (sliderNum < 6) {
+                //     sliderNum = 0;
+                    
+                // }
             } 
         }
 
