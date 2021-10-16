@@ -306,7 +306,7 @@ body {
 
 #section4 .container .tegnologias {
     position: relative;
-    top: -44%;
+    top: -28%;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -321,26 +321,33 @@ body {
     display: flex;
     padding-bottom: 37px;
     justify-content: center;
-    margin-left: -200px;
+    margin-left: -260px;
     align-items: center;
 }
 
 #section4 .container .tegnologias .techInfo p {
-    width: 50%;
+    width: 40%;
     letter-spacing: 1px;
-    font-size: 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+#section4 .container .tegnologias .techInfo p span {
+    color: #88b1c6;
+    font-size: 25px;
+    letter-spacing: 2px;
 }
 
 #section4 .container .imagen1 {
 
     position: relative;
-    top: -50%;
+    top: -40%;
     left: 47%;
 }
 
 #section4 .container .imagen1 img {
-    width: 260px;
-    height: 340px;
+    width: 280px;
+    height: 400px;
 }
 
 #section4 .container .imagen1 .footerTitleC h1{
@@ -350,6 +357,5 @@ body {
     -webkit-text-fill-color: rgba(141, 17, 17, 0);
     position: absolute;
     left: 17%;
-    bottom: 80%;
-
+    bottom: 84%;
 }
