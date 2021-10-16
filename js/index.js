@@ -10,7 +10,7 @@ document.addEventListener("click", e => {
         if (e.target.matches(".left")) {
             if (sliderNum > -1) { 
                 sliderNum--;
-                imagen.style.transform = `translateX(${360 + distance}px)`
+                imagen.style.transform = `translateX(${380 + distance}px)`
                 console.log(sliderNum)
             } else {
                 imagen.style.transform = `translateX(${0}px)`
@@ -22,7 +22,9 @@ document.addEventListener("click", e => {
                 sliderNum++;
                 console.log(sliderNum)
                 imagen.style.transform = `translateX(${-290 + distance}px)`
-            } 
+            } else {
+                imagen.style.transform = `translateX(${-1900}px)`
+            }
             
         }
     }
