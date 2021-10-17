@@ -55,7 +55,6 @@ scroll1.addEventListener("mousedown", (e) => {
     scroll1.classList.add('active')
     startX = e.pageX - scroll1.offsetLeft;
     scrollLeft = scroll1.scrollLeft
-    console.log(startX)
 })
 
 scroll1.addEventListener("mouseleave", () => {
@@ -74,5 +73,4 @@ scroll1.addEventListener("mousemove", (e) => {
     const x = e.pageX - scroll1.offsetLeft
     const walk = x - startX
     scroll1.scrollLeft = scrollLeft - walk
-    console.log(walk)
 })
