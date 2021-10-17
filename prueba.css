@@ -10,7 +10,7 @@
 
 body {
     overflow-x: hidden;
-    /* width: 100vw; */
+    max-width: 100vw;
     background: white;
 }
 
@@ -127,6 +127,7 @@ body {
 #section1 .subConatiner .title {
     -webkit-text-stroke: 2px #ffffff;
     -webkit-text-fill-color: rgba(141, 17, 17, 0);
+    transform: translate(-4%, 10%);
     font-size: 150px;
 }
 
@@ -461,20 +462,55 @@ footer .redes img {
 
     #section1 .subConatiner .title {
         font-size: 120px;
+        transform: translate(-4%, 10%);
     }
 
     #section1 .subConatiner .subTitle span {
         font-size: 11px;
+    }
+
+    .elipse {
+        top: -24.5%;
+        left: -8.5%;
+    }
+
+    #section1 .elipse img{
+        width: 200px;
     }
 }
 
 @media  screen and (max-width: 900px) {
     #section1 .subConatiner .title {
         font-size: 90px;
+        transform: translate(-4%, 10%);
+    }
+
+    .elipse {
+        top: -26%;
+        left: -15%;
     }
 }
 
 
 @media  screen and (max-width: 700px) {
-    
+    #section1 .subConatiner .title {
+        font-size: 70px;
+        transform: translate(-4%, 10%);
+    }
+
+    #section3 .scroll1 .image3 .title3 h2 {
+        font-size: 100px;
+    }
+}
+
+@media  screen and (max-width: 540px) {
+    #section1 .subConatiner .title {
+        font-size: 50px;
+        transform: translate(-4%, 8%);
+    }
+
+    .elipse {
+        top: -25%;
+        left: -20%;
+    }
 }
