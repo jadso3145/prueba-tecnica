@@ -1,14 +1,11 @@
 const botton = document.querySelector("img")
-
 const scroll1 = document.querySelector(".scroll1")
 const animado = document.querySelectorAll('.animado');
 
+
 let sliderNum = 0
-
 let isDown = false;
-
 let startX;
-
 let scrollLeft;
 
 
