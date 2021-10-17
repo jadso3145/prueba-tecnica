@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Carme', sans-serif;
 }
 
 body {
@@ -17,6 +21,26 @@ body {
     height: 100vh;
     text-align: center;
 }
+
+
+
+/*direccion en la que aparencen las animaciones*/
+
+
+@keyframes mover {
+    0% {
+        transform: translateX(-1000px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
 
 .elipse {
     position: relative;
@@ -120,7 +144,8 @@ body {
 #section1 .subConatiner .subTitle span {
     color: white;
     padding: 10px;
-    font-size: 17.2px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 #section2 {
@@ -185,8 +210,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .3s ease;
+    transform: translate(0);
     margin-right: 53px;
     height: 400px;
+    opacity: 0;
 }
 
 #section3 .image3 .subTitle {
@@ -220,9 +248,10 @@ body {
 #section3 .image3 img {
     width: 350px;
     height: 200px;
+    cursor: pointer;
     padding-left: 15px;
     z-index: 9999999;
-    transition: all 0.3s;
+    transition: all 0.7s;
 }
 #section3 .image3 img:hover ~ .subTitle {
     display: flex;
@@ -276,7 +305,7 @@ body {
 }
 
 #section3 .elipse3 img {
-    width: 90px;
+    width: 100px;
 }
 
 .elipse2 {
@@ -369,9 +398,11 @@ body {
 }
 
 #section4 .container .imagen1 .footerTitleC h1 {
+    transition: all .5s;
     font-size: 140px;
     -webkit-text-stroke: 2px #000;
     letter-spacing: 17px;
+    opacity: 0;
     -webkit-text-fill-color: rgba(141, 17, 17, 0);
     position: absolute;
     left: 17%;
@@ -385,7 +416,8 @@ footer {
     overflow-y: hidden;
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 79px;
+    /* position: absolute; */
 }
 
 .footerC {
@@ -410,4 +442,12 @@ footer .redes {
 footer .redes img {
     margin-left: 25px;
     width: 26px;
+}
+
+
+
+
+
+@media screen {
+    
 }
