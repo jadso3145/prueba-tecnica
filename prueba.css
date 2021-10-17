@@ -57,7 +57,6 @@ body {
     padding-left: 50px;
     padding-right: 50px;
 }
-
 #section1 header ul li:hover {
     transform: scale(1.1);
     color: black;
@@ -72,7 +71,6 @@ body {
     transition: all 0.3s;
     color: white;
 }
-
 #section1 header ul li a:hover {
     border-bottom: 1px solid white;
     transform: scale(1.5);
@@ -132,36 +130,22 @@ body {
 #section3 {
     position: absolute;
     background: #161415;
-
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
 }
 
 #section3 {
     position: relative;
     top: -30%;
     overflow-y: hidden;
+    height: 120vh;
 }
 
-.carousel {
-    min-height: 500px;
-    width: 900px;
-}
-
-.carousel .carousel-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.scroll1.active {
+    background: #161415;
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
     user-select: none;
-    /* width: 800px;
-    height: 800px; */
-}
-
-.carousel .carousel-item img {
-    width: 150%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
 }
 
 #section3 .scroll1 {
@@ -171,11 +155,12 @@ body {
     top: -16%;
     transition: all 0.3s ease;
     display: grid;
+    overflow-x: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
 }
 
-#section3::-webkit-scrollbar {
+#section3 .scroll1::-webkit-scrollbar {
     display: none;
 }
 
@@ -201,26 +186,35 @@ body {
     align-items: center;
     justify-content: center;
     margin-right: 53px;
+    height: 400px;
 }
 
-#section3 .image3 span {
-    font-size: 25px;
-    text-align: left;
-    width: 10%;
+#section3 .image3 .subTitle {
+    display: flex;
+    justify-content: center;
+    /* float: left; */
+    display: none;
+    align-items: flex-start;
+    margin-left: 15px;
+    position: absolute;
+    top: 89%;
+    z-index: 9999;
+    flex-direction: column;
+}
+
+#section3 .image3 .subTitle span {
+    font-size: 22px;
+    position: relative;
+    white-space: nowrap;
+    font-weight: bold;
     color: #ee8530;
-    justify-self: left;
 }
 
 #section3 .image3 p {
-    color: #ee8530;
-    width: 30%;
+    color: #dd8b48;
     border-bottom: 1px solid #ee8530;
-}
-
-#section3 .image3 hr {
-    background-color: #ee8530;
-    height: 2px;
-    width: 50%;
+    font-size: 11px;
+    font-weight: bold;
 }
 
 #section3 .image3 img {
@@ -230,9 +224,12 @@ body {
     z-index: 9999999;
     transition: all 0.3s;
 }
-
+#section3 .image3 img:hover ~ .subTitle {
+    display: flex;
+}
 #section3 .image3 img:hover {
     transform: scale(1.4);
+    display: flex;
 }
 
 #section3 .arrowContainer {
@@ -243,7 +240,7 @@ body {
     z-index: 9999999;
     position: absolute;
     left: 90%;
-    margin-top: -55px;
+    margin-top: -145px;
 }
 
 #section3 .arrowContainer .divLeft {
@@ -257,7 +254,6 @@ body {
     z-index: 9999999;
     width: 20px;
 }
-
 #section3 .arrowContainer .divLeft .left:hover {
     transform: rotate(-180deg) scale(1.2);
 }
@@ -269,7 +265,6 @@ body {
 
     width: 20px;
 }
-
 #section3 .arrowContainer .divRigth .rigth:hover {
     transform: rotate(-180deg) scale(1.2);
 }
@@ -333,6 +328,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 #section4 .container .tegnologias .logoTech {
     height: 50px;
     padding-right: 20px;
@@ -349,7 +345,7 @@ body {
 #section4 .container .tegnologias .techInfo p {
     width: 40%;
     letter-spacing: 1px;
-    color: #161415;;
+    color: #161415;
     text-align: left;
     font-size: 14px;
 }
@@ -372,7 +368,7 @@ body {
     height: 400px;
 }
 
-#section4 .container .imagen1 .footerTitleC h1{
+#section4 .container .imagen1 .footerTitleC h1 {
     font-size: 140px;
     -webkit-text-stroke: 2px #000;
     letter-spacing: 17px;
@@ -382,21 +378,36 @@ body {
     bottom: 84%;
 }
 
-
 footer {
     background-color: #88b1c6;
     width: 100vw;
-    position: absolute;
-    top: 400%;
+    margin-top: -115px;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
 }
-
 
 .footerC {
     height: 150px;
-    /* padding: 50px; */
 }
 
 .footerC span {
     font-size: 25px;
     font-weight: bold;
+    position: relative;
+    top: 21%;
+    left: 55px;
+}
+
+footer .redes {
+    position: relative;
+    top: 25%;
+    right: 55px;
+    padding: 10px;
+}
+
+footer .redes img {
+    margin-left: 25px;
+    width: 26px;
 }
