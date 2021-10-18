@@ -1,12 +1,21 @@
 const botton = document.querySelector("img")
 const scroll1 = document.querySelector(".scroll1")
 const animado = document.querySelectorAll('.animado');
-
+const menu = document.getElementById("menu")
+const nav = document.getElementById("nav")
 
 let sliderNum = 0
 let isDown = false;
 let startX;
 let scrollLeft;
+
+menu.addEventListener("click", e => {
+    menu.classList.toggle("change")
+    nav.classList.toggle("change")
+})
+
+
+
 
 
 window.addEventListener('scroll', () => {
@@ -21,34 +30,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-
-
-// document.addEventListener("click", e => {
-
-//     if (e.target.matches(".flecha")) {
-//         const imagen = document.querySelector(".image3")
-
-//         let distance = imagen.getBoundingClientRect().x - 50
-//         if (e.target.matches(".left")) {
-//             if (sliderNum > 0) {
-//                 sliderNum--;
-//                 imagen.style.transform = `translateX(${380 + distance}px)`
-//                 console.log(sliderNum)
-//             } else {
-//                 // imagen.style.transform = `translateX(${1900}px)`
-//             }
-//         }
-//         if (e.target.matches(".rigth")) {
-//             if (sliderNum < 5) {
-//                 sliderNum++;
-//                 console.log(sliderNum)
-//                 imagen.style.transform = `translateX(${-290 + distance}px)`
-//             } else {
-//                 // imagen.style.transform = `translateX(${0}px)`
-//             }
-//         }
-//     }
-// })
 
 scroll1.addEventListener("mousedown", (e) => {
     isDown = true

@@ -13,6 +13,80 @@ body {
     background: white;
 }
 
+
+
+#menu {
+    z-index: 9999999999;
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #b81568;
+    display: block;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.change .bar {
+    background-color: white;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px 0;
+}
+
+.nav{
+    padding: 0;
+    margin: 0 20px;
+    display: none;
+    transition: all .3s ease;
+}
+
+.change {
+    display: block;
+}
+
+
+
+
+
+
 .parallax {
     background: #fff fixed no-repeat 50% 50%;
     background-size: cover;
@@ -58,7 +132,7 @@ body {
     position: fixed;
 }
 
-#section1 header ul {
+#section1 header .ul2 {
     display: flex;
     align-items: center;
     list-style: none;
@@ -68,18 +142,18 @@ body {
     z-index: 999999;
 }
 
-#section1 header ul li {
+#section1 header .ul2 li {
     transform: scale(.8);
     transition: all 0.3s;
     padding-left: 50px;
     padding-right: 50px;
 }
-#section1 header ul li:hover {
+#section1 header .ul2 li:hover {
     transform: scale(1.1);
     color: black;
 }
 
-#section1 header ul li a {
+#section1 header .ul2 li a {
     text-decoration: none;
     padding-bottom: 1px;
     font-size: 23px;
@@ -88,7 +162,7 @@ body {
     transition: all 0.3s;
     color: white;
 }
-#section1 header ul li a:hover {
+#section1 header .ul2 li a:hover {
     border-bottom: 1px solid white;
     transform: scale(1.5);
     border-left-width: 1px;
@@ -96,7 +170,7 @@ body {
 
 }
 
-#section1 header ul h2 {
+#section1 header .ul2 h2 {
     font-size: 50px;
     color: white;
 }
@@ -314,7 +388,7 @@ body {
     /* height: 500px; */
 }
 
-#section3 .elipse3 .circulo {
+#section3 .elipse3 .circ.ul2o {
     position: relative;
     left: -2%;
     z-index: 5;
@@ -437,9 +511,14 @@ footer .redes img {
     width: 26px;
 }
 @media screen and (max-width: 1200px) {
-    #section1 header ul {
+    #section1 header .ul2 {
         display: none;
     }
+
+    #menu {
+        display: block;
+    }
+
 
     #section1 .subConatiner .title {
         font-size: 120px;
@@ -451,8 +530,9 @@ footer .redes img {
     }
 
     .elipse {
-        top: -24.5%;
-        left: -8.5%;
+        top: -25%;
+        left: 7%;
+        float: right;
     }
 
     #section4 .container .imagen1 {
@@ -517,14 +597,7 @@ footer .redes img {
         height: 200px;
     }
 
-    /* #section4 .container .tegnologias {
-        transform: translate(20%, 70%);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-    } */
+    
 
     .elipse {
         top: -26%;
@@ -554,16 +627,34 @@ footer .redes img {
     }
 
     #section4 .container .imagen1 {
-        /* width: 100vw; */
         transform: translate(91%, -5%);
     }
 
+    #section4 .container .tegnologias .techInfo p {
+        font-size: 12px;
+    }
+
+
+#section4 .container .tegnologias .techInfo span {
+    font-size: 15px;
+}
 
     #section4 .container .imagen1 .footerTitleC h1 {
         transform: translate(-30%, -50%);
         font-size: 100px;
     }
+
+    #section4 .container .tegnologias {
+        transform: translate(23%, 70%);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
 }
+
+
 @media screen and (max-width: 540px) {
     #section1 .subConatiner .title {
         font-size: 50px;
