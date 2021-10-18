@@ -222,7 +222,7 @@ body {
     position: relative;
     top: -30%;
     overflow-y: hidden;
-    height: 120vh;
+    height: 100vh;
 }
 .scroll1.active {
     background: #161415;
@@ -343,7 +343,7 @@ body {
     background-size: cover;
     transform: translateY(-13.4%);
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
 }
 #section4 .container {
     grid-template-columns: repeat(2, 1fr);
