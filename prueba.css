@@ -13,8 +13,6 @@ body {
     background: white;
 }
 
-
-
 #menu {
     z-index: 9999999999;
     width: 35px;
@@ -30,7 +28,7 @@ body {
     background-color: #161415;
     display: block;
     border-radius: 5px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
 #bar1 {
@@ -61,7 +59,6 @@ body {
     color: white;
     text-decoration: none;
 }
-
 .nav li a:hover {
     font-weight: bold;
 }
@@ -71,19 +68,42 @@ body {
     padding: 16px 0;
 }
 
-.nav{
+.nav {
     padding: 0;
     margin: 0 20px;
     display: none;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
 .change {
     display: block;
 }
 
+.menu-bg {
+    z-index: 1;
+    height: 0;
+    width: 0;
+    background: #161415;
+    transition: all 0.3s ease;
+    margin: 30px 0 20px 20px;
+    border-radius: 50%;
+}
 
+.change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+}
 
+.menu-bg, #menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+#menu-bar {
+    z-index: 2;
+}
 
 
 
@@ -519,7 +539,6 @@ footer .redes img {
         display: block;
     }
 
-
     #section1 .subConatiner .title {
         font-size: 120px;
         transform: translate(-4%, 10%);
@@ -597,8 +616,6 @@ footer .redes img {
         height: 200px;
     }
 
-    
-
     .elipse {
         top: -26%;
         left: -15%;
@@ -634,10 +651,9 @@ footer .redes img {
         font-size: 12px;
     }
 
-
-#section4 .container .tegnologias .techInfo span {
-    font-size: 15px;
-}
+    #section4 .container .tegnologias .techInfo span {
+        font-size: 15px;
+    }
 
     #section4 .container .imagen1 .footerTitleC h1 {
         transform: translate(-30%, -50%);
@@ -653,8 +669,6 @@ footer .redes img {
         width: 100vw;
     }
 }
-
-
 @media screen and (max-width: 540px) {
     #section1 .subConatiner .title {
         font-size: 50px;

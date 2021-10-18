@@ -3,6 +3,7 @@ const scroll1 = document.querySelector(".scroll1")
 const animado = document.querySelectorAll('.animado');
 const menu = document.getElementById("menu")
 const nav = document.getElementById("nav")
+const menuBg = document.getElementById("menu-bg")
 
 let sliderNum = 0
 let isDown = false;
@@ -12,6 +13,7 @@ let scrollLeft;
 menu.addEventListener("click", e => {
     menu.classList.toggle("change")
     nav.classList.toggle("change")
+    menuBg.classList.toggle("change-bg")
 })
 
 
