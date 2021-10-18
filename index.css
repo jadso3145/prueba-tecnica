@@ -5,12 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Carme', sans-serif;
-    scroll-behavior: smooth;
 }
 
 body {
     overflow-x: hidden;
-    background: white;
+    background: #F1ECE9;
 }
 
 /* ///// MENU HAMBURGUESA */
@@ -440,7 +439,7 @@ footer .redes img {
 /* ///// FOOTER */
 
 /* ///// RESPONSIVE */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
     #section1 header .ul2 {
         display: none;
     }
