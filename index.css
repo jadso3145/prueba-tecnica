@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Carme', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
     background: white;
 }
 
+/* ///// MENU HAMBURGUESA */
 #menu {
     z-index: 9999999999;
     width: 35px;
@@ -20,7 +22,6 @@ body {
     cursor: pointer;
     display: none;
 }
-
 .bar {
     height: 5px;
     width: 100%;
@@ -29,31 +30,24 @@ body {
     border-radius: 5px;
     transition: all 0.3s ease;
 }
-
 #bar1 {
     transform: translateY(-4px);
 }
-
 #bar3 {
     transform: translateY(4px);
 }
-
 .change .bar {
     background-color: white;
 }
-
 .change #bar1 {
     transform: translateY(4px) rotateZ(-45deg);
 }
-
 .change #bar3 {
     transform: translateY(-6px) rotate(45deg);
 }
-
 .change #bar2 {
     opacity: 0;
 }
-
 .nav li a {
     color: white;
     text-decoration: none;
@@ -61,23 +55,19 @@ body {
 .nav li a:hover {
     font-weight: bold;
 }
-
 .nav li {
     list-style: none;
     padding: 16px 0;
 }
-
 .nav {
     padding: 0;
     margin: 0 20px;
     display: none;
     transition: all 0.3s ease;
 }
-
 .change {
     display: block;
 }
-
 .menu-bg {
     z-index: 1;
     height: 0;
@@ -87,24 +77,23 @@ body {
     margin: 30px 0 20px 20px;
     border-radius: 50%;
 }
-
 .change-bg {
     width: 550px;
     height: 540px;
     transform: translate(-60%, -30%);
 }
-
 #menu-bar,
 .menu-bg {
     top: 0;
     left: 0;
     position: absolute;
 }
-
 #menu-bar {
     z-index: 2;
 }
+/* ///// MENU HAMBURGUESA */
 
+/* ///// SECCION1 Y ANIMACIONES */
 .parallax {
     background: #fff fixed no-repeat 50% 50%;
     background-size: cover;
@@ -112,7 +101,6 @@ body {
     height: 100vh;
     text-align: center;
 }
-
 /*direccion en la que aparencen las animaciones*/
 .animado {
     opacity: 0;
@@ -121,35 +109,29 @@ body {
     0% {
         transform: translateX(-1000px);
     }
-
     100% {
         transform: translateX(0);
     }
 }
-
 .elipse {
     position: relative;
     width: 300px;
     top: -23%;
     left: -4%;
 }
-
 .elipse img {
     width: 300px;
     height: 500px;
     z-index: 1;
 }
-
 #section1 {
     background-image: url("./imagenes/Enmascarar\ grupo\ 2.png");
 }
-
 #section1 header {
     padding-left: 10px;
     padding-right: 10px;
     position: fixed;
 }
-
 #section1 header .ul2 {
     display: flex;
     align-items: center;
@@ -159,7 +141,6 @@ body {
     padding: 50px;
     z-index: 999999;
 }
-
 #section1 header .ul2 li {
     transform: scale(.8);
     transition: all 0.3s;
@@ -170,7 +151,6 @@ body {
     transform: scale(1.1);
     color: black;
 }
-
 #section1 header .ul2 li a {
     text-decoration: none;
     padding-bottom: 1px;
@@ -187,12 +167,10 @@ body {
     color: black;
 
 }
-
 #section1 header .ul2 h2 {
     font-size: 50px;
     color: white;
 }
-
 #section1 .subConatiner {
     position: fixed;
     top: 37%;
@@ -201,17 +179,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* transform: translateY(50%); */
-    /* transform: translateX(50%); */
 }
-
 #section1 .subConatiner .title {
     -webkit-text-stroke: 2px #ffffff;
     -webkit-text-fill-color: rgba(141, 17, 17, 0);
     transform: translate(-4%, 10%);
     font-size: 150px;
 }
-
 #section1 .subConatiner .subTitle {
     margin-top: 30px;
     text-align: center;
@@ -222,36 +196,35 @@ body {
     box-shadow: 0 0 2px #000;
     background-color: transparent;
 }
-
 #section1 .subConatiner .fillter {
     -webkit-backdrop-filter: blur(.5px);
     backdrop-filter: blur(.5px);
 }
-
 #section1 .subConatiner .subTitle span {
     color: white;
     padding: 10px;
     font-size: 15px;
     font-weight: 500;
 }
+/* //////// SECCION 1 */
 
+/* ///// SECCION 2 */
 #section2 {
     background-image: url("./imagenes/Enmascarar\ grupo\ 1.png");
 }
+/* ///// SECCION 2 */
 
+/* ///// SECCION 3 */
 #section3 {
     position: absolute;
     background: #161415;
-    /* overflow-x: scroll; */
 }
-
 #section3 {
     position: relative;
     top: -30%;
     overflow-y: hidden;
     height: 120vh;
 }
-
 .scroll1.active {
     background: #161415;
     cursor: grabbing;
@@ -259,7 +232,6 @@ body {
     transform: scale(1);
     user-select: none;
 }
-
 #section3 .scroll1 {
     margin-top: 180px;
     transform: translateX(0px);
@@ -271,27 +243,22 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
 }
-
 #section3 .scroll1::-webkit-scrollbar {
     display: none;
 }
-
 #section3 .title3 {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: right;
 }
-
 #section3 .title3 h2 {
     position: relative;
     font-size: 100px;
     -webkit-text-stroke: 2px #ffffff;
     -webkit-text-fill-color: rgba(141, 17, 17, 0);
     margin-left: 50px;
-    /* top: -30%; */
 }
-
 #section3 .image3 {
     display: flex;
     align-items: center;
@@ -302,7 +269,6 @@ body {
     height: 400px;
     opacity: 0;
 }
-
 #section3 .image3 .subTitle {
     display: flex;
     justify-content: center;
@@ -315,7 +281,6 @@ body {
     z-index: 9999;
     flex-direction: column;
 }
-
 #section3 .image3 .subTitle span {
     font-size: 22px;
     position: relative;
@@ -323,14 +288,12 @@ body {
     font-weight: bold;
     color: #ee8530;
 }
-
 #section3 .image3 p {
     color: #dd8b48;
     border-bottom: 1px solid #ee8530;
     font-size: 11px;
     font-weight: bold;
 }
-
 #section3 .image3 img {
     width: 350px;
     height: 200px;
@@ -346,17 +309,14 @@ body {
     transform: scale(1.4);
     display: flex;
 }
-
 #section3 .elipse3 {
     position: relative;
     top: -5%;
     left: -44%;
 }
-
 #section3 .elipse3 img {
     width: 100px;
 }
-
 .elipse2 {
     position: relative;
     width: 300px;
@@ -364,22 +324,20 @@ body {
     margin-bottom: -20;
     left: 85%;
 }
-
 .elipse2 img {
     width: 260px;
-    /* height: 500px; */
 }
-
 #section3 .elipse3 .circulo {
     position: relative;
     left: -2%;
     z-index: 5;
 }
-
 #section3 .elipse3 .ovalo {
     z-index: 100000000;
 }
+/* ///// SECCION 3 */
 
+/* ///// SECCION 4 */
 #section4 {
     position: relative;
     background-image: url("./imagenes/Trazado\ 2.svg");
@@ -388,7 +346,6 @@ body {
     width: 100vw;
     height: 120vh;
 }
-
 #section4 .container {
     grid-template-columns: repeat(2, 1fr);
     display: grid;
@@ -397,7 +354,6 @@ body {
     position: relative;
     top: 50%;
 }
-
 #section4 .container .tegnologias {
     position: relative;
     top: -28%;
@@ -406,12 +362,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 #section4 .container .tegnologias .logoTech {
     height: 50px;
     padding-right: 20px;
 }
-
 #section4 .container .tegnologias .techInfo {
     display: flex;
     padding-bottom: 37px;
@@ -419,7 +373,6 @@ body {
     margin-left: -260px;
     align-items: center;
 }
-
 #section4 .container .tegnologias .techInfo p {
     width: 40%;
     letter-spacing: 1px;
@@ -427,25 +380,20 @@ body {
     text-align: left;
     font-size: 14px;
 }
-
 #section4 .container .tegnologias .techInfo p span {
     color: #88b1c6;
     font-size: 25px;
     letter-spacing: 2px;
 }
-
 #section4 .container .imagen1 {
-
     position: relative;
     top: -40%;
     left: 47%;
 }
-
 #section4 .container .imagen1 img {
     width: 280px;
     height: 400px;
 }
-
 #section4 .container .imagen1 .footerTitleC h1 {
     transition: all 0.5s;
     font-size: 140px;
@@ -457,7 +405,9 @@ body {
     left: 17%;
     bottom: 84%;
 }
+/* ///// SECCION 4 */
 
+/* ///// FOOTER */
 footer {
     background-color: #88b1c6;
     width: 100vw;
@@ -466,13 +416,10 @@ footer {
     display: flex;
     justify-content: space-between;
     height: 79px;
-    /* position: absolute; */
 }
-
 .footerC {
     height: 150px;
 }
-
 .footerC span {
     font-size: 25px;
     font-weight: bold;
@@ -480,57 +427,49 @@ footer {
     top: 21%;
     left: 55px;
 }
-
 footer .redes {
     position: relative;
     top: 25%;
     right: 55px;
     padding: 10px;
 }
-
 footer .redes img {
     margin-left: 25px;
     width: 26px;
 }
+/* ///// FOOTER */
+
+/* ///// RESPONSIVE */
 @media screen and (max-width: 1200px) {
     #section1 header .ul2 {
         display: none;
     }
-
     #menu {
         display: block;
     }
-
     #section1 .subConatiner .title {
         font-size: 120px;
         transform: translate(-4%, 10%);
     }
-
     #section1 .subConatiner .subTitle span {
         font-size: 11px;
     }
-
     .elipse {
         top: -25%;
         left: 7%;
         float: right;
     }
-
     #section4 .container .imagen1 {
-        /* width: 100vw; */
         transform: translate(185%, -5%);
     }
-
     #section4 .container .imagen1 h1 {
         transform: translate(-32%, 3%);
     }
-
     #section4 .container .imagen1 img {
         width: 250px;
         height: 200px;
         margin-bottom: 90px;
     }
-
     #section4 .container .tegnologias {
         transform: translate(20%, 70%);
         display: grid;
@@ -539,7 +478,6 @@ footer .redes img {
         align-items: center;
         width: 100vw;
     }
-
     #section4 .container .tegnologias .techInfo {
         display: grid;
         grid-template: repeat(3, 1fr);
@@ -547,7 +485,6 @@ footer .redes img {
         align-items: center;
         text-align: center;
     }
-
     #section1 .elipse img {
         width: 200px;
     }
@@ -557,33 +494,26 @@ footer .redes img {
         font-size: 90px;
         transform: translate(-4%, 10%);
     }
-
     #section3 .image3 img {
         width: 320px;
         height: 200px;
     }
-
     #section4 .container .imagen1 {
-        /* width: 100vw; */
         transform: translate(128%, -5%);
     }
-
     #section4 .container .imagen1 h1 {
         transform: translate(-30%, 3%);
         font-size: 90px;
     }
-
     #section4 .container .imagen1 img {
         width: 250px;
         height: 200px;
     }
-
     .elipse {
         top: -26%;
         left: -15%;
         display: none;
     }
-
     .elipse2 {
         width: 280px;
         top: -30%;
@@ -596,33 +526,26 @@ footer .redes img {
         font-size: 70px;
         transform: translate(-4%, 10%);
     }
-
     #section3 .image3 img {
         width: 300px;
         height: 180px;
     }
-
     #section3 .title3 h2 {
         font-size: 80px;
     }
-
     #section4 .container .imagen1 {
         transform: translate(91%, -5%);
     }
-
     #section4 .container .tegnologias .techInfo p {
         font-size: 12px;
     }
-
     #section4 .container .tegnologias .techInfo span {
         font-size: 15px;
     }
-
     #section4 .container .imagen1 .footerTitleC h1 {
         transform: translate(-30%, -50%);
         font-size: 100px;
     }
-
     #section4 .container .tegnologias {
         transform: translate(23%, 70%);
         display: grid;
@@ -637,56 +560,69 @@ footer .redes img {
         font-size: 50px;
         transform: translate(-20%, 90%);
     }
-
     #section4 .container .imagen1 .footerTitleC h1 {
         transform: translate(25%, -300%);
         font-size: 70px;
     }
-
     #section1 .subConatiner .subTitle {
         font-size: 11px;
         transform: translate(-40%, 90%);
     }
-
     #section4 .container .tegnologias {
         transform: translate(80%, -5%);
         grid-template-columns: repeat(1, 1fr);
     }
-
     #section4 .container .imagen1 img {
         display: none;
     }
-
     footer {
         height: 127px;
     }
-
     .footerC span {
         font-size: 25px;
         top: 21%;
         left: 105px;
     }
-
     footer .redes {
         top: 70%;
         white-space: nowrap;
         right: 35%;
     }
 }
-
 @media screen and (max-width: 350px) {
     #section1 .subConatiner .title {
         font-size: 50px;
-        transform: translate(-20%, 10%);
+        transform: translate(-10%, -10%);
     }
-
     #section1 .subConatiner .subTitle {
         font-size: 11px;
-        transform: translate(-40%, 10%);
+        transform: translate(-20%, -50%);
     }
-
-    #section1 .subConatiner .subTitle span{
-        font-size: 8px;
+    #section1 .subConatiner .subTitle span {
+        font-size: 10px;
         width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    footer {
+        height: 260px;
+    }
+    #section4 .container .imagen1 .footerTitleC h1 {
+        transform: translate(5%, -370%);
+        font-size: 67px;
+    }
+    .footerC span {
+        white-space: nowrap;
+        left: 30px;
+        top: 47%;
+    }
+    footer .redes {
+        top: 70%;
+        white-space: nowrap;
+        right: 60%;
+    }
+    #section4 .container .tegnologias {
+        transform: translate(100%, -10%);
     }
 }
+/* ///// RESPONSIVE */

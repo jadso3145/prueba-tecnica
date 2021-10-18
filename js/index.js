@@ -10,12 +10,16 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
+////////////////////////// MENU HAMBURGUESA
 menu.addEventListener("click", e => {
     menu.classList.toggle("change")
     nav.classList.toggle("change")
     menuBg.classList.toggle("change-bg")
 })
+////////////////////////// MENU HAMBURGUESA
 
+
+////////////////////////// ANIMACION POR SCROLL
 window.addEventListener('scroll', () => {
     let animacion = document.querySelectorAll(".animado")
     animacion.forEach(item => {
@@ -24,10 +28,13 @@ window.addEventListener('scroll', () => {
         if (positionObj1 < pantalla) {
             item.style.opacity = 1;
             item.style.animation = 'mover 1s ease-out'
-        }
+        };
     });
 });
+////////////////////////// ANIMACION POR SCROLL
 
+
+////////////////////////// SCROLL HORIZONTAL
 scroll1.addEventListener("mousedown", (e) => {
     isDown = true
     scroll1.classList.add('active')
@@ -52,3 +59,4 @@ scroll1.addEventListener("mousemove", (e) => {
     const walk = x - startX
     scroll1.scrollLeft = scrollLeft - walk
 })
+////////////////////////// SCROLL HORIZONTAL
