@@ -16,10 +16,6 @@ menu.addEventListener("click", e => {
     menuBg.classList.toggle("change-bg")
 })
 
-
-
-
-
 window.addEventListener('scroll', () => {
     let animacion = document.querySelectorAll(".animado")
     animacion.forEach(item => {
@@ -31,7 +27,6 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
 
 scroll1.addEventListener("mousedown", (e) => {
     isDown = true

@@ -9,7 +9,6 @@
 
 body {
     overflow-x: hidden;
-    max-width: 100vw;
     background: white;
 }
 
@@ -95,7 +94,8 @@ body {
     transform: translate(-60%, -30%);
 }
 
-.menu-bg, #menu-bar {
+#menu-bar,
+.menu-bg {
     top: 0;
     left: 0;
     position: absolute;
@@ -104,8 +104,6 @@ body {
 #menu-bar {
     z-index: 2;
 }
-
-
 
 .parallax {
     background: #fff fixed no-repeat 50% 50%;
@@ -408,7 +406,7 @@ body {
     /* height: 500px; */
 }
 
-#section3 .elipse3 .circ.ul2o {
+#section3 .elipse3 .circulo {
     position: relative;
     left: -2%;
     z-index: 5;
@@ -619,6 +617,7 @@ footer .redes img {
     .elipse {
         top: -26%;
         left: -15%;
+        display: none;
     }
 
     .elipse2 {
@@ -663,7 +662,7 @@ footer .redes img {
     #section4 .container .tegnologias {
         transform: translate(23%, 70%);
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, 1fr);
         justify-content: center;
         align-items: center;
         width: 100vw;
@@ -672,11 +671,42 @@ footer .redes img {
 @media screen and (max-width: 540px) {
     #section1 .subConatiner .title {
         font-size: 50px;
-        transform: translate(-4%, 8%);
+        transform: translate(-20%, 90%);
     }
 
-    .elipse {
-        top: -25%;
-        left: -20%;
+    #section4 .container .imagen1 .footerTitleC h1 {
+        transform: translate(25%, -300%);
+        font-size: 70px;
     }
+
+    #section1 .subConatiner .subTitle {
+        font-size: 11px;
+        transform: translate(-40%, 90%);
+    }
+
+    #section4 .container .tegnologias {
+        transform: translate(80%, -5%);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #section4 .container .imagen1 img {
+        display: none;
+    }
+
+    footer {
+        height: 127px;
+    }
+
+    .footerC span {
+        font-size: 25px;
+        top: 21%;
+        left: 105px;
+    }
+
+    footer .redes {
+        top: 70%;
+        white-space: nowrap;
+        right: 35%;
+    }
+
 }
